@@ -16,7 +16,7 @@ patches:
               - name: manager
                 resources:
                   limits:
-                    cpu: 100m
+                    cpu: null
   # target all controllers
     target:
       kind: Deployment
