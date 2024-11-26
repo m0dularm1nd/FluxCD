@@ -13,7 +13,7 @@ patches:
         template:
           spec:
             containers:
-              - name:
+              - name: manager
                 resources:
                   limits:
                     cpu: 100m
