@@ -9,6 +9,8 @@ spec:
   interval: 1m0s
   ref:
     branch: testing
+  secretRef:
+    name: flux-system
   url: https://github.com/m0dularm1nd/FluxCD.git
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
