@@ -8,7 +8,7 @@ metadata:
 spec:
   interval: 1m0s
   ref:
-    branch: testing
+    branch: FluxCD
   secretRef:
     name: flux-system
   url: https://github.com/m0dularm1nd/CICD-Manifest.git
