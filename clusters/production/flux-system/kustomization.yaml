@@ -15,9 +15,9 @@ patches:
             containers:
               - name: manager
                 resources:
-                  requests:
-                    cpu: null
                   limits:
+                    cpu: null
+                  requests:
                     cpu: null
   # target all controllers
     target:
