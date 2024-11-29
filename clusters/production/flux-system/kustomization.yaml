@@ -5,6 +5,13 @@ resources:
 - gotk-sync.yaml
 patches:
   - patch: |-
+      - op: replace
+        path: /spec/template/spec/containers/0/resources/requests/cpu
+        value: 50m 
+    target:
+      kind: Deployment
+      labelSelector: "app.kubernetes.io/part-of=flux"
+  - patch: |-
       apiVersion: apps/v1
       kind: Deployment
       metadata:
