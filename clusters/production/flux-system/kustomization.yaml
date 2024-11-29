@@ -7,7 +7,7 @@ patches:
   - patch: |-
       - op: replace
         path: /spec/template/spec/containers/0/resources/requests/cpu
-        value: null
+        value: 
     target:
       kind: Deployment
       labelSelector: "app.kubernetes.io/part-of=flux"
