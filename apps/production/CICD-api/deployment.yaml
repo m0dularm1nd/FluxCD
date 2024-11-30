@@ -19,7 +19,7 @@ metadata:
   name: cicd-api
   namespace: flux-system
 spec:
-  interval: 10m0s
+  interval: 1h
   path: ./staging/
   prune: true
   sourceRef:

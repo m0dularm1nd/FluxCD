@@ -1,3 +1,2 @@
 resources:
 - namespace.yaml
-- ./CICD-api/api.yaml
