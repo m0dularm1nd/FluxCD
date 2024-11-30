@@ -1,2 +1,3 @@
 resources:
   - ../base
+  - ./CICD-api/deployment.yaml
