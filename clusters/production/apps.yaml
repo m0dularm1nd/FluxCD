@@ -4,7 +4,7 @@ metadata:
   name: prod-apps
   namespace: flux-system
 spec:
-  interval: 10m0s
+  interval: 168h
   path: ./apps/production
   prune: true
   sourceRef:
