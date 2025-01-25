@@ -1,3 +1,4 @@
 resources:
   - ../base
   - ./CICD-api/deployment.yaml
+  - ./wall-api/main.yaml

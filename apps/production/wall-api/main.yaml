@@ -1,0 +1,26 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: wall-api
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  ref:
+    branch: api
+  secretRef:
+    name: flux-system
+  url: https://github.com/m0dularm1nd/CICD-Manifest.git
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: wall-api
+  namespace: flux-system
+spec:
+  interval: 168h
+  path: ./staging/
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: cicd-api
